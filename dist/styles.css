@@ -1,0 +1,271 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ .site {
+     background: #fff;
+     border-left: 1px solid #ccc;
+ }
+
+ .site__header {
+     padding: 20px 25px;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .site__body {
+     padding: 25px;
+ }
+
+ .site__footer {
+     padding: 25px;
+     background-color: #d8dde1;
+ }
+
+ img {
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+
+ .icon {
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+
+ .logo {
+     display: inline-block;
+     width: 150px;
+     height: 20px;
+     border-radius: 35px;
+     background-color: #d8dde1;
+ }
+
+ .body {
+     max-width: 1250px;
+     margin: 0 auto;
+ }
+
+ .body__image-block {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 25px;
+     margin-bottom: 25px;
+ }
+
+ .body__image-block_small {
+     margin: 0 auto;
+     width: 100%;
+     max-width: 800px;
+     align-items: flex-start;
+ }
+
+ .body__image {
+     width: 50%;
+ }
+
+ .body__image_small {
+     width: 30%;
+     max-width: 120px;
+     min-width: 90px;
+ }
+
+ .body__text-container {
+     width: 50%;
+     margin: 0 auto 25px;
+ }
+
+ .body__text-container_wide {
+     width: 100%;
+     max-width: 800px;
+ }
+
+ .body__text {
+     width: 100%;
+     height: 10px;
+     background-color: #d8dde1;
+     margin-bottom: 10px;
+ }
+
+ .body__text_w-30 {
+     width: 30%;
+ }
+
+ .body__text_w-60 {
+     width: 60%;
+ }
+
+ .body__text_bold {
+     height: 30px;
+     width: 60%;
+     margin-bottom: 30px;
+ }
+
+ .header {
+     max-width: 1250px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .header__right-side {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .header__input {
+     width: 300px;
+     height: 40px;
+     box-sizing: border-box;
+     border-radius: 35px;
+     border: 2px solid #d8dde1;
+     padding: 5px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .header__input-icon {
+     width: 20px;
+     height: 20px;
+ }
+
+ .header__burger {
+     flex-shrink: 0;
+     width: 20px;
+     height: 20px;
+ }
+
+ .header__burger svg {
+     fill: #d8dde1;
+ }
+
+ .footer {
+     max-width: 1250px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .footer__menu {
+     width: 50%;
+     display: flex;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .footer__menu-item {
+     width: 25%;
+     height: 7px;
+     border-radius: 10px;
+     background-color: #fff;
+ }
+
+ .footer__menu-item:nth-child(1) {
+     width: 30%;
+ }
+
+ .footer__menu-item:nth-child(2) {
+     width: 15%;
+ }
+
+ .footer__menu-item:nth-child(3) {
+     width: 20%;
+ }
+
+ .footer__menu-item:nth-child(4) {
+     width: 15%;
+ }
+
+ .footer__logo {
+     background-color: #fff;
+ }
+
+ @media all and (max-width: 600px) {
+     .logo {
+         display: none;
+     }
+
+     .body__image-block {
+         flex-direction: column-reverse;
+         width: 100%;
+     }
+
+     .body__image-block_small {
+         flex-direction: row;
+     }
+
+     .body__image {
+         width: 100%;
+     }
+
+     .body__text-container {
+         width: 100%;
+     }
+
+     .body__text-container_no-mob-margin {
+         margin-bottom: 0;
+     }
+
+     .header__right-side {
+         width: 100%;
+     }
+
+     .header__input {
+         width: 100%;
+     }
+
+     .footer__menu {
+         width: 100%;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .footer__menu-item:nth-child(1) {
+         width: 40%;
+     }
+
+     .footer__menu-item:nth-child(2) {
+         width: 30%;
+     }
+
+     .footer__menu-item:nth-child(3) {
+         width: 30%;
+     }
+
+     .footer__menu-item:nth-child(4) {
+         width: 45%;
+     }
+   #gameCanvas {
+     display: block;
+     width: 100vw; /* Устанавливает ширину canvas по размеру окна */
+     height: 100vh; /* По высоте окна, если нужно */
+     position:absolute ;
+     top:0;
+     left: 0;
+
+     box-sizing: border-box;
+   }
+ }
+
+
+ #gameCanvas {
+   background-image: url(2682a391752a29697fe2.png);
+   background-size: 295px 295px; /* Размер каждой плитки 200x200 пикселей */
+   background-repeat: repeat; /* Повторяем изображение плиткой */
+   background-position: center; /* Центрируем первую плитку */
+   display: block;
+   width: 100vw; /* Устанавливает ширину canvas по размеру окна */
+   height: 100vh;
+   position:absolute ;
+   top:0;
+   left: 0;
+   box-sizing: border-box;
+ }
